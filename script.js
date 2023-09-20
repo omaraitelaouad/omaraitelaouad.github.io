@@ -9,6 +9,7 @@ const menuFun =()=> {
 		pages.style.display = "block"
 		navbar = "close"
 		nav.style.borderRight = "solid 3px blue"
+		pages.style.posisionLeft = "10px"
 	}else{
 		nav.style.width = "0px"
 		nav.style.borderRight = "solid 0px blue"
@@ -18,4 +19,25 @@ const menuFun =()=> {
 }
 
 menu.onclick = menuFun
+
+var home = document.getElementsByClassName("home")[0]
+var language = document.getElementsByClassName("language")[0]
+
+const yo =()=> {
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth",
+	})
+}
+home.onclick = yo
+
+const to =()=> {
+	window.scrollTo({
+		top: 1050,
+		behavior: "smooth",
+	})
+}
+
+language.onclick = to
+
 
